@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drive Tesla</title>
+    <link rel="stylesheet" href="styles-page2.css" />
+    <script src="page2.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-row">
+        <div class="main-heading">
+          <h1>Drive Tesla</h1>
+          <a href=""><img src="icons/icon-caret-down.png" height="40px" /></a>
+        </div>
+        <div class="additional-options">
+          <a href=""><img src="icons/icon-comment.png" height="40px" /></a>
+          <a href=""><img src="icons/icon-stacks.png" height="40px" /></a>
+        </div>
+      </div>
+      <div class="battery-row">
+        <img src="icons/icon-battery.png" height="40px" />
+        <h1>40%</h1>
+      </div>
+      <div class="parked-row">
+        <h3>Parked</h3>
+      </div>
+    </header>
+
+    <div class="car">
+      <img src="images/image-page-2-car.png"/>
+    </div>
+
+    <div class="control-icons">
+      <a href=""><img src="icons/icon-lock-1.png" height="48px" /></a>
+      <a href=""><img src="icons/icon-fan-2.png" height="48px" /></a>
+      <a href=""><img src="icons/icon-bonnet-3.png" height="48px" /></a>
+      <a href=""><img src="icons/icon-boot-4.png" height="48px" /></a>
+      <a href=""><img src="icons/icon-record-5.png" height="48px" /></a>
+    </div>
+
+    <div class="dropdown-menus">
+      <div class="dropdown">
+        <button onclick="showControlsDropdown()" class="dropbtn">
+          <div class="button-heading">
+            <img
+              class="button-heading-img"
+              src="icons/icon-dropdown-car-1.png"
+              height="48px"
+            />
+            <h3 class="button-heading-text">Controls</h3>
+          </div>
+          <img src="icons/icon-caret-right.png" height="48px" />
+        </button>
+        <div id="controls-dropdown" class="dropdown-content">
+          <a href=""><h4>Lock</h4></a>
+          <a href=""><h4>Unlock</h4></a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <div class="button-heading">
+            <img
+              class="button-heading-img"
+              src="icons/icon-dropdown-fan-2.png"
+              height="48px"
+            />
+            <div class="button-double-heading">
+              <h3 class="button-heading-text">Climate</h3>
+              <h4>Interior 11°C</h4>
+            </div>
+          </div>
+          <img src="icons/icon-caret-right.png" height="48px" />
+        </button>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <div class="button-heading">
+            <img
+              class="button-heading-img img-location"
+              src="icons/icon-dropdown-location-3.png"
+              height="48px"
+            />
+            <h3 class="button-heading-text">Location</h3>
+          </div>
+          <img src="icons/icon-caret-right.png" height="48px" />
+        </button>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <div class="button-heading">
+            <img
+              class="button-heading-img"
+              src="icons/icon-dropdown-wheel-4.png"
+              height="48px"
+            />
+            <h3 class="button-heading-text">Summon</h3>
+          </div>
+          <img src="icons/icon-caret-right.png" height="48px" />
+        </button>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="showScheduleDropdown()" class="dropbtn">
+          <div class="button-heading">
+            <img
+              class="button-heading-img"
+              src="icons/icon-dropdown-alarm-5.png"
+              height="48px"
+            />
+            <h3 class="button-heading-text">Schedule</h3>
+          </div>
+          <img src="icons/icon-caret-right.png" height="48px" />
+        </button>
+        <div id="schedule-dropdown" class="dropdown-content">
+          <a href=""><h4>Departure</h4></a>
+          <a href=""><h4>Climate</h4></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
